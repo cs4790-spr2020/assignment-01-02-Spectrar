@@ -1,17 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlabberApp.DataStore", "..\BlabberApp.DataStore\BlabberApp.DataStore.csproj", "{FF222388-1A62-4DE8-8A89-C677BD6E8942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlabberApp.DataStore", "..\BlabberApp.DataStore\BlabberApp.DataStore.csproj", "{FF222388-1A62-4DE8-8A89-C677BD6E8942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlabberApp.Client", "..\BlabberApp.Client\BlabberApp.Client.csproj", "{C44BE9D0-827F-4ED6-AE00-C7F8E64016FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlabberApp.Client", "..\BlabberApp.Client\BlabberApp.Client.csproj", "{C44BE9D0-827F-4ED6-AE00-C7F8E64016FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlabberApp.Console", "..\BlabberApp.Console\BlabberApp.Console.csproj", "{6D262113-03BC-4557-90A8-680020FF3A8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlabberApp.Console", "..\BlabberApp.Console\BlabberApp.Console.csproj", "{6D262113-03BC-4557-90A8-680020FF3A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlabberApp.Domain", "..\BlabberApp.Domain\BlabberApp.Domain.csproj", "{C7B45C33-4DE4-42A1-BEAF-5754BD97EF1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlabberApp.Domain", "..\BlabberApp.Domain\BlabberApp.Domain.csproj", "{C7B45C33-4DE4-42A1-BEAF-5754BD97EF1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlabberApp.WebApi", "..\BlabberApp.WebApi\BlabberApp.WebApi.csproj", "{18A47015-9F15-4DC9-8570-18EFAB56AD7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlabberApp.WebApi", "..\BlabberApp.WebApi\BlabberApp.WebApi.csproj", "{18A47015-9F15-4DC9-8570-18EFAB56AD7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlabberApp.DataStoreTest", "..\BlabberApp.DataStoreTest\BlabberApp.DataStoreTest.csproj", "{DFD61B8D-8381-4FE6-BC84-455761679602}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF222388-1A62-4DE8-8A89-C677BD6E8942} = {FF222388-1A62-4DE8-8A89-C677BD6E8942}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlabberApp.DomainTest", "..\BlabberApp.DomainTest\BlabberApp.DomainTest.csproj", "{83447683-B244-44A0-B52E-0A3DA9DC3C9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7B45C33-4DE4-42A1-BEAF-5754BD97EF1D} = {C7B45C33-4DE4-42A1-BEAF-5754BD97EF1D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FF222388-1A62-4DE8-8A89-C677BD6E8942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -86,5 +93,35 @@ Global
 		{18A47015-9F15-4DC9-8570-18EFAB56AD7D}.Release|x64.Build.0 = Release|Any CPU
 		{18A47015-9F15-4DC9-8570-18EFAB56AD7D}.Release|x86.ActiveCfg = Release|Any CPU
 		{18A47015-9F15-4DC9-8570-18EFAB56AD7D}.Release|x86.Build.0 = Release|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Debug|x64.Build.0 = Debug|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Debug|x86.Build.0 = Debug|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Release|x64.ActiveCfg = Release|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Release|x64.Build.0 = Release|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFD61B8D-8381-4FE6-BC84-455761679602}.Release|x86.Build.0 = Release|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Debug|x64.Build.0 = Debug|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Debug|x86.Build.0 = Debug|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Release|x64.ActiveCfg = Release|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Release|x64.Build.0 = Release|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Release|x86.ActiveCfg = Release|Any CPU
+		{83447683-B244-44A0-B52E-0A3DA9DC3C9F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A006F37C-E5FF-433B-BA3B-EA213BA78219}
 	EndGlobalSection
 EndGlobal
